@@ -26,6 +26,6 @@ steps:
   displayName: 'Docker build and push'
   inputs:
     containerRegistry: 'Docker Hub'
-    repository: 'estudo-docker'
+    repository: 'gustavoishizava/estudo-docker'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
