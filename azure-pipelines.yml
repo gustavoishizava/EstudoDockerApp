@@ -29,3 +29,10 @@ steps:
     repository: 'gustavoishizava/estudo-docker'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: '$(Build.BuildNumber)'
+
+- task: Docker@2
+  displayName: 'Docker logout'
+  inputs:
+    containerRegistry: 'Docker Hub'
+    command: 'logout'
